@@ -25,7 +25,7 @@ This repository includes:
 
 Please install the required packages with:
 
-```bash
+
 pip install -r requirements.txt
 
 ## Abstract
