@@ -34,3 +34,9 @@ To train the proposed CAR method, run: python train_CAR.py
 
 To train the baseline method, run: python train_baseline.py
 
+To train other variants, run the corresponding training scripts in this repository, for example:
+
+python train_CAR_ConCutMix.py
+python train_CAR_FMix.py
+python train_CAR_PuzzleMix.py
+
