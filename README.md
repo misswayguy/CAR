@@ -28,5 +28,9 @@ Please install the required packages with:
 
 pip install -r requirements.txt
 
-## Abstract
+## Training
+
+To train the proposed CAR method, run: python train_CAR.py
+
+To train the baseline method, run: python train_baseline.py
 
