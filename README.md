@@ -1,6 +1,6 @@
 # CAR: Confusion-Aware Spectral Regularizer for Long-Tailed Recognition
 
-> **[CVPR 2026]** Confusion-Aware Spectral Regularizer for Long-Tailed Recognition
+> **[CVPR 2026 Oral]** Confusion-Aware Spectral Regularizer for Long-Tailed Recognition
 
 ## Abstract
 
@@ -30,13 +30,5 @@ pip install -r requirements.txt
 
 ## Training
 
-To train the proposed CAR method, run: python train_CAR.py
 
-To train the baseline method, run: python train_baseline.py
-
-To train other variants, run the corresponding training scripts in this repository, for example:
-
-python train_CAR_ConCutMix.py
-python train_CAR_FMix.py
-python train_CAR_PuzzleMix.py
 
