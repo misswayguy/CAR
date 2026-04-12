@@ -18,7 +18,6 @@ This repository includes:
 
 - training code for **CAR**
 - training code for baseline methods
-- implementations of multiple long-tailed learning strategies and augmentation variants
 - utilities for analysis and visualization
 
 ## Requirements
