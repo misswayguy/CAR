@@ -30,4 +30,34 @@ pip install -r requirements.txt
 ## Training
 
 
+### Example: CIFAR100-LT-IF10 with ViT-S
 
+Run the following command to train CAR with a ViT-S backbone on CIFAR100-LT-IF10:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python train_CSR_tail_weights.py \
+  --train-dir /mnt/data/lsy/ZZQ/cifar100-LT-IF10/train \
+  --val-dir /mnt/data/lsy/ZZQ/cifar100-LT-IF10/test \
+  --model vit_small_patch16_224 \
+  --img-size 224 \
+  --batch-size 128 \
+  --epochs 50 \
+  --opt adamw \
+  --lr 5e-5 \
+  --weight-decay 0.05 \
+  --no-pretrained \
+  --init /data2/lsy/ZZQ/pretrained_weights/vit_small.bin \
+  --sched cosine \
+  --warmup-epochs 5 \
+  --min-lr 1e-6 \
+  --use-wj \
+  --spec-lambda 0.3 \
+  --spec-beta 0.5 \
+  --spec-temp 1 \
+  --hmt \
+  --head-th 100 \
+  --tail-th 20 \
+  --save ckpt_tinyIN_IF100_vitS_differ_true_ema.pth \
+  --wj-norm \
+  --wj-min 1e-3 \
+  --r0 0.5
