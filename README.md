@@ -59,7 +59,7 @@ CUDA_VISIBLE_DEVICES=0 python train_car_tail.py \
   --hmt \
   --head-th 100 \
   --tail-th 20 \
-  --save sav.pth \
+  --save ./weights/ckpt_tiny_imagenet_if100_vits_ldam.pth\
   --wj-norm \
   --wj-min 1e-3 \
   --r0 0.5
