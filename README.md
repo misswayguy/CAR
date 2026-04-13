@@ -22,10 +22,12 @@ This repository includes:
 
 ## Requirements
 
+
 Please install the required packages with:
 
-
+```bash
 pip install -r requirements.txt
+```
 
 ## Training
 
@@ -61,3 +63,4 @@ CUDA_VISIBLE_DEVICES=0 python train_car_tail.py \
   --wj-norm \
   --wj-min 1e-3 \
   --r0 0.5
+
