@@ -65,3 +65,22 @@ CUDA_VISIBLE_DEVICES=0 python train_car_tail.py \
   --r0 0.5
 ```
 
+### Example: Training baseline with ViT-S
+
+Run the following command to train the baseline model with LDAM loss:
+
+```bash
+CUDA_VISIBLE_DEVICES=5 python train_baseline_tail.py \
+  --train-dir /your_train_dataset_path \
+  --val-dir /your_test_dataset_path \
+  --model vit_small_patch16_224 \
+  --img-size 224 \
+  --batch-size 32 \
+  --epochs 30 \
+  --lr 3e-4 \
+  --no-pretrained \
+  --init /your_vit_small_checkpoint_path \
+  --head-th 100 \
+  --tail-th 20 \
+  --save ./weights/ckpt.pth\
+
